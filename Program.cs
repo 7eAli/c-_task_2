@@ -7,6 +7,7 @@
             int[,] array = { { 7, 3, 2 }, { 4, 9, 6 }, { 1, 8, 5 } };
             Show2dimArray(array);
             Sort2dimArray(array);
+            Console.WriteLine();
             Show2dimArray(array);
 
         }
@@ -24,7 +25,7 @@
         }
         static void Sort2dimArray(int[,] array)
         {
-            
+
             for (int i = 0; i < array.Length; i++)
             {
                 int max = array[0, 0];
@@ -46,9 +47,9 @@
                             max = array[j, k];
                             maxRow = j; maxCol = k;
                         }
-                    }                    
+                    }
                 }
             }
-        }        
+        }
     }
 }
